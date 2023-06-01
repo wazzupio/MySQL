@@ -166,6 +166,16 @@ INSERT INTO `media_types` VALUES (1,'accusantium'),(3,'cumque'),(4,'esse'),(2,'i
 /*!40000 ALTER TABLE `media_types` ENABLE KEYS */;
 UNLOCK TABLES;
 
+/*
+ 3. Написать запрос для переименования названий типов медиа (колонка name в media_types),
+ которые вы получили в пункте 3 в осмысленные (например, в "фото", "видео", ...).
+ */
+
+UPDATE `media_types` SET name = 'фото' WHERE id = 1;
+UPDATE `media_types` SET name = 'видео' WHERE id = 2;
+UPDATE `media_types` SET name = 'изображение' WHERE id = 3;
+UPDATE `media_types` SET name = 'музыка' WHERE id = 4;
+
 --
 -- Table structure for table `messages`
 --
